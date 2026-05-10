@@ -2,5 +2,6 @@
 import { defineConfig } from "astro/config";
 
 export default defineConfig({
-  site: 'https://lavanda-anapa.ru',
+  site: "https://wpcraft-ru.github.io",
+  base: "/lavanda-anapa/",
 });
