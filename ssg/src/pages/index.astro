@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <Layout
@@ -16,7 +18,7 @@ import Layout from '../layouts/Layout.astro';
           Современные номера, закрытая территория и&nbsp;песчаный пляж в&nbsp;10&nbsp;минутах — в&nbsp;посёлке Нижнее Джемете, Анапа.
         </p>
         <div class="hero__actions">
-          <a href="/rooms/" class="btn btn--primary btn--md">Смотреть номера</a>
+          <a href={`${base}rooms/`} class="btn btn--primary btn--md">Смотреть номера</a>
           <a href="tel:+79892625694" class="btn btn--cta btn--md">Позвонить</a>
         </div>
       </div>
@@ -26,11 +28,11 @@ import Layout from '../layouts/Layout.astro';
   <section class="section" style="padding-top:0;">
     <div class="container">
       <div style="display:grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: var(--space-lg);">
-        <img src="/images/facilities/guest-house.jpg" alt="Фасад гостевого дома Лаванда" class="card__image" />
-        <img src="/images/facilities/pool-lounge.jpg" alt="Зона отдыха с мангалом и шезлонгами" class="card__image" />
+        <img src="{base}images/facilities/guest-house.jpg" alt="Фасад гостевого дома Лаванда" class="card__image" />
+        <img src="{base}images/facilities/pool-lounge.jpg" alt="Зона отдыха с мангалом и шезлонгами" class="card__image" />
       </div>
       <div style="margin-top: var(--space-lg); display:grid; grid-template-columns: 1fr; gap: var(--space-lg);">
-        <img src="/images/hero/hero-beach.jpg" alt="Пляж рядом с гостевым домом Лаванда" class="card__image" />
+        <img src="{base}images/hero/hero-beach.jpg" alt="Пляж рядом с гостевым домом Лаванда" class="card__image" />
       </div>
     </div>
   </section>
@@ -74,7 +76,7 @@ import Layout from '../layouts/Layout.astro';
       <div class="room-grid">
         <!-- Эконом -->
         <div class="card room-card">
-          <img src="/images/rooms/econom-1.jpg" alt="Эконом номер в гостевом доме Лаванда" class="card__image" />
+          <img src="{base}images/rooms/econom-1.jpg" alt="Эконом номер в гостевом доме Лаванда" class="card__image" />
           <div class="card__body">
             <h3 class="room-card__title">Эконом</h3>
             <div class="room-card__amenities">
@@ -85,13 +87,13 @@ import Layout from '../layouts/Layout.astro';
             </div>
             <div class="room-card__footer">
               <div class="room-card__price">от 800 <small>₽/ночь</small></div>
-              <a href="/rooms/econom/" class="btn btn--secondary btn--sm">Подробнее</a>
+              <a href={`${base}rooms/econom/`} class="btn btn--secondary btn--sm">Подробнее</a>
             </div>
           </div>
         </div>
         <!-- Стандарт -->
         <div class="card room-card">
-          <img src="/images/rooms/standard-1.jpg" alt="Номер Стандарт в гостевом доме Лаванда" class="card__image" />
+          <img src="{base}images/rooms/standard-1.jpg" alt="Номер Стандарт в гостевом доме Лаванда" class="card__image" />
           <div class="card__body">
             <h3 class="room-card__title">Стандарт</h3>
             <div class="room-card__amenities">
@@ -104,13 +106,13 @@ import Layout from '../layouts/Layout.astro';
             </div>
             <div class="room-card__footer">
               <div class="room-card__price">от 1&nbsp;500 <small>₽/ночь</small></div>
-              <a href="/rooms/standard/" class="btn btn--secondary btn--sm">Подробнее</a>
+              <a href={`${base}rooms/standard/`} class="btn btn--secondary btn--sm">Подробнее</a>
             </div>
           </div>
         </div>
         <!-- Семейный -->
         <div class="card room-card">
-          <img src="/images/rooms/family-1.jpg" alt="Семейный номер в гостевом доме Лаванда" class="card__image" />
+          <img src="{base}images/rooms/family-1.jpg" alt="Семейный номер в гостевом доме Лаванда" class="card__image" />
           <div class="card__body">
             <h3 class="room-card__title">Семейный 2-комнатный</h3>
             <div class="room-card__amenities">
@@ -124,13 +126,13 @@ import Layout from '../layouts/Layout.astro';
             </div>
             <div class="room-card__footer">
               <div class="room-card__price">от 2&nbsp;500 <small>₽/ночь</small></div>
-              <a href="/rooms/family/" class="btn btn--secondary btn--sm">Подробнее</a>
+              <a href={`${base}rooms/family/`} class="btn btn--secondary btn--sm">Подробнее</a>
             </div>
           </div>
         </div>
       </div>
       <div style="text-align:center; margin-top: var(--space-xl);">
-        <a href="/rooms/" class="btn btn--ghost btn--md">Все номера →</a>
+        <a href={`${base}rooms/`} class="btn btn--ghost btn--md">Все номера →</a>
       </div>
     </div>
   </section>
@@ -199,7 +201,7 @@ import Layout from '../layouts/Layout.astro';
           Система оповещения о задымлении в каждом номере и коридоре — ваша безопасность наш приоритет.
         </p>
       </div>
-      <img src="/images/facilities/territory.jpg" alt="Закрытая территория гостевого дома Лаванда" style="width:100%; border-radius: var(--radius-lg); aspect-ratio: 4 / 3; object-fit: cover;" />
+      <img src="{base}images/facilities/territory.jpg" alt="Закрытая территория гостевого дома Лаванда" style="width:100%; border-radius: var(--radius-lg); aspect-ratio: 4 / 3; object-fit: cover;" />
     </div>
   </section>
 
@@ -257,7 +259,7 @@ import Layout from '../layouts/Layout.astro';
         </div>
       </div>
       <div style="text-align:center; margin-top: var(--space-xl);">
-        <a href="/reviews/" class="btn btn--ghost btn--md">Все отзывы →</a>
+        <a href={`${base}reviews/`} class="btn btn--ghost btn--md">Все отзывы →</a>
       </div>
     </div>
   </section>

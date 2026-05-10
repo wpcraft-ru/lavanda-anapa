@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <Layout
@@ -21,9 +23,9 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </div>
         <div style="margin-top: var(--space-2xl); display:grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: var(--space-lg);">
-          <img src="/images/reviews/guest-1.jpg" alt="Гости отдыхают на территории гостевого дома Лаванда" class="card__image" />
-          <img src="/images/reviews/guest-2.jpg" alt="Счастливые гости гостевого дома Лаванда" class="card__image" />
-          <img src="/images/reviews/guest-3.jpg" alt="Гости делятся положительными впечатлениями" class="card__image" />
+          <img src="{base}images/reviews/guest-1.jpg" alt="Гости отдыхают на территории гостевого дома Лаванда" class="card__image" />
+          <img src="{base}images/reviews/guest-2.jpg" alt="Счастливые гости гостевого дома Лаванда" class="card__image" />
+          <img src="{base}images/reviews/guest-3.jpg" alt="Гости делятся положительными впечатлениями" class="card__image" />
         </div>
       </div>
     </div>
