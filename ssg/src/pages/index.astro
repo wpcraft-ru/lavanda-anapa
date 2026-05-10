@@ -1,0 +1,285 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Гостевой Дом «Лаванда» — Семейный отдых в Анапе, Джемете"
+  description="Современные номера от 800 ₽, закрытая территория, детская площадка, 10 минут до песчаного пляжа. Гостевой дом «Лаванда» в посёлке Нижнее Джемете, Анапа."
+>
+
+  <!-- ==================== 1. Hero ==================== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__content">
+        <h1 class="hero__title">Отдых, в&nbsp;который хочется вернуться</h1>
+        <p class="hero__subtitle">
+          Современные номера, закрытая территория и&nbsp;песчаный пляж в&nbsp;10&nbsp;минутах — в&nbsp;посёлке Нижнее Джемете, Анапа.
+        </p>
+        <div class="hero__actions">
+          <a href="/rooms/" class="btn btn--primary btn--md">Смотреть номера</a>
+          <a href="tel:+79892625694" class="btn btn--cta btn--md">Позвонить</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div style="display:grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: var(--space-lg);">
+        <img src="/images/facilities/guest-house.jpg" alt="Фасад гостевого дома Лаванда" class="card__image" />
+        <img src="/images/facilities/pool-lounge.jpg" alt="Зона отдыха с мангалом и шезлонгами" class="card__image" />
+      </div>
+      <div style="margin-top: var(--space-lg); display:grid; grid-template-columns: 1fr; gap: var(--space-lg);">
+        <img src="/images/hero/hero-beach.jpg" alt="Пляж рядом с гостевым домом Лаванда" class="card__image" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 2. Почему Лаванда ==================== -->
+  <section class="section">
+    <div class="container">
+      <h2 class="h2" style="text-align:center; margin-bottom: var(--space-2xl);">Почему выбирают «Лаванду»</h2>
+      <div class="features">
+        <div class="feature">
+          <div class="feature__icon">⭐</div>
+          <div class="feature__title">Рейтинг 5,0</div>
+          <p class="feature__text">147 оценок на Яндекс Картах. Награда «Хорошее место&nbsp;2026»</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">🏖️</div>
+          <div class="feature__title">10 минут до пляжа</div>
+          <p class="feature__text">Песчаный пляж — прогулочным шагом. Пионерский проспект в&nbsp;5&nbsp;минутах</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">🔒</div>
+          <div class="feature__title">Закрытая территория</div>
+          <p class="feature__text">Видеонаблюдение, система оповещения о&nbsp;задымлении. Дети в&nbsp;безопасности</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">🧹</div>
+          <div class="feature__title">Чистота и уют</div>
+          <p class="feature__text">Свежий ремонт, кипельно-белое бельё, регулярная уборка и&nbsp;смена&nbsp;полотенец</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 3. Номера ==================== -->
+  <section class="section" style="background: var(--color-surface);">
+    <div class="container">
+      <h2 class="h2" style="text-align:center; margin-bottom: var(--space-sm);">Номера</h2>
+      <p class="text-muted" style="text-align:center; margin-bottom: var(--space-2xl);">
+        Комфортабельные номера на любой бюджет — от эконом до семейного двухкомнатного
+      </p>
+      <div class="room-grid">
+        <!-- Эконом -->
+        <div class="card room-card">
+          <img src="/images/rooms/econom-1.jpg" alt="Эконом номер в гостевом доме Лаванда" class="card__image" />
+          <div class="card__body">
+            <h3 class="room-card__title">Эконом</h3>
+            <div class="room-card__amenities">
+              <span>🛏️ Ортопедический матрас</span>
+              <span>❄️ Кондиционер</span>
+              <span>📺 ТВ</span>
+              <span>🔒 Сейф</span>
+            </div>
+            <div class="room-card__footer">
+              <div class="room-card__price">от 800 <small>₽/ночь</small></div>
+              <a href="/rooms/econom/" class="btn btn--secondary btn--sm">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <!-- Стандарт -->
+        <div class="card room-card">
+          <img src="/images/rooms/standard-1.jpg" alt="Номер Стандарт в гостевом доме Лаванда" class="card__image" />
+          <div class="card__body">
+            <h3 class="room-card__title">Стандарт</h3>
+            <div class="room-card__amenities">
+              <span>🛏️ Ортопедический матрас</span>
+              <span>❄️ Кондиционер</span>
+              <span>📺 ТВ</span>
+              <span>🧊 Холодильник</span>
+              <span>🔒 Сейф</span>
+              <span>🌅 Балкон</span>
+            </div>
+            <div class="room-card__footer">
+              <div class="room-card__price">от 1&nbsp;500 <small>₽/ночь</small></div>
+              <a href="/rooms/standard/" class="btn btn--secondary btn--sm">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <!-- Семейный -->
+        <div class="card room-card">
+          <img src="/images/rooms/family-1.jpg" alt="Семейный номер в гостевом доме Лаванда" class="card__image" />
+          <div class="card__body">
+            <h3 class="room-card__title">Семейный 2-комнатный</h3>
+            <div class="room-card__amenities">
+              <span>🛏️🛏️ 2 комнаты</span>
+              <span>🍳 Кухня</span>
+              <span>❄️ Кондиционер</span>
+              <span>📺 ТВ</span>
+              <span>🧊 Холодильник</span>
+              <span>🔒 Сейф</span>
+              <span>🌅 Балкон</span>
+            </div>
+            <div class="room-card__footer">
+              <div class="room-card__price">от 2&nbsp;500 <small>₽/ночь</small></div>
+              <a href="/rooms/family/" class="btn btn--secondary btn--sm">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top: var(--space-xl);">
+        <a href="/rooms/" class="btn btn--ghost btn--md">Все номера →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 4. Удобства ==================== -->
+  <section class="section">
+    <div class="container">
+      <h2 class="h2" style="text-align:center; margin-bottom: var(--space-2xl);">Удобства и услуги</h2>
+      <div class="features">
+        <div class="feature">
+          <div class="feature__icon">❄️</div>
+          <div class="feature__title">Кондиционер</div>
+          <p class="feature__text">Сплит-система в каждом номере</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">🍳</div>
+          <div class="feature__title">Общая кухня</div>
+          <p class="feature__text">С посудомойками и всей необходимой посудой</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">🧺</div>
+          <div class="feature__title">Прачечная</div>
+          <p class="feature__text">Услуги стирки для гостей</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">🔒</div>
+          <div class="feature__title">Сейф</div>
+          <p class="feature__text">В каждом номере — для ценностей</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">🅿️</div>
+          <div class="feature__title">Парковка</div>
+          <p class="feature__text">Закрытая территория, место для авто</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">📶</div>
+          <div class="feature__title">Wi-Fi</div>
+          <p class="feature__text">Бесплатный на всей территории</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">🔥</div>
+          <div class="feature__title">Мангал и беседки</div>
+          <p class="feature__text">Для вечерних посиделок на свежем воздухе</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">🛝</div>
+          <div class="feature__title">Детская площадка</div>
+          <p class="feature__text">Дети играют — родители отдыхают</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 5. Территория ==================== -->
+  <section class="section" style="background: var(--color-surface);">
+    <div class="container" style="display:grid; grid-template-columns: 1fr 1fr; gap: var(--space-3xl); align-items:center;">
+      <div>
+        <h2 class="h2" style="margin-bottom: var(--space-lg);">Закрытая территория для&nbsp;вашего спокойствия</h2>
+        <p style="margin-bottom: var(--space-md);">
+          Территория гостевого дома полностью закрыта и&nbsp;оборудована системой видеонаблюдения. Вы&nbsp;можете быть уверены: дети в&nbsp;безопасности, вещи под&nbsp;присмотром.
+        </p>
+        <p style="margin-bottom: var(--space-md);">
+          Уютные беседки с мангалом — для тёплых семейных вечеров. Детская площадка — чтобы дети играли, пока вы отдыхаете.
+        </p>
+        <p>
+          Система оповещения о задымлении в каждом номере и коридоре — ваша безопасность наш приоритет.
+        </p>
+      </div>
+      <img src="/images/facilities/territory.jpg" alt="Закрытая территория гостевого дома Лаванда" style="width:100%; border-radius: var(--radius-lg); aspect-ratio: 4 / 3; object-fit: cover;" />
+    </div>
+  </section>
+
+  <!-- ==================== 6. Отзывы ==================== -->
+  <section class="section">
+    <div class="container">
+      <h2 class="h2" style="text-align:center; margin-bottom: var(--space-sm);">Что говорят гости</h2>
+      <div class="reviews-overall">
+        <div class="reviews-overall__rating">5,0</div>
+        <div>
+          <div class="reviews-overall__stars">★★★★★</div>
+          <p class="text-muted">147 оценок на Яндекс Картах</p>
+          <span class="badge">Хорошее место 2026</span>
+        </div>
+      </div>
+      <div class="reviews-grid">
+        <div class="testimonial">
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="testimonial__text">
+            «Отличный отдых на майские праздники. Чистый номер, свежий ремонт, кипельно белое постельное бельё. Есть общая кухня — очень удивила чистотой и качеством посуды. Хозяева душевные и тёплые. Обязательно вернёмся!»
+          </p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar" style="background: var(--color-primary); display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700;">Н</div>
+            <div>
+              <div class="text-sm" style="font-weight:600;">Наталия А.</div>
+              <div class="text-caption text-muted">Июль 2023</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="testimonial__text">
+            «Отличное место для семейного отдыха. Номер уютный и чистый. Жили 8 ночей — была смена белья и уборка. На этаже микроволновка, можно брать посуду. Управляющая Светлана и её муж — большие молодцы. Только положительные эмоции!»
+          </p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar" style="background: var(--color-secondary); display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700;">Е</div>
+            <div>
+              <div class="text-sm" style="font-weight:600;">Евгений Е.</div>
+              <div class="text-caption text-muted">Июль 2023</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="testimonial__text">
+            «Хозяйка Светлана — замечательная девушка, всегда поможет и на любые вопросы ответит. Снимали 2-комнатный с кухней — чисто, уборка регулярно, ремонт хороший, вся техника работает. С водой проблем нет. До моря 20 минут пешком.»
+          </p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar" style="background: var(--color-accent); display:flex; align-items:center; justify-content:center; color:var(--color-text); font-weight:700;">N</div>
+            <div>
+              <div class="text-sm" style="font-weight:600;">Nadia P.</div>
+              <div class="text-caption text-muted">Май 2024</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top: var(--space-xl);">
+        <a href="/reviews/" class="btn btn--ghost btn--md">Все отзывы →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 7. Контакты ==================== -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="contact-block">
+        <h2 class="h2" style="color:#fff; margin-bottom: var(--space-lg);">Забронировать номер</h2>
+        <p style="margin-bottom: var(--space-lg); opacity:0.9;">
+          Позвоните нам — расскажем о свободных номерах и поможем с выбором
+        </p>
+        <a href="tel:+79892625694" class="contact-block__phone">+7 (989) 262-56-94</a>
+        <p style="opacity:0.8;">Администратор Светлана — круглосуточно</p>
+        <div class="contact-block__info">
+          <span>📍 ул. Видная, 46Б, Анапа, п. Джемете</span>
+          <span>🚉 Ж/д станция Юбилейная — 1 км</span>
+          <span>✈️ Аэропорт — 7 км</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+

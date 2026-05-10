@@ -1,0 +1,133 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Контакты — Гостевой Дом «Лаванда», Анапа, Джемете"
+  description="Адрес: ул. Видная, 46Б, Анапа, п. Нижнее Джемете. Телефон: +7 (989) 262-56-94. Как добраться: аэропорт (7 км), вокзал (2 км), станция Юбилейная (1 км)."
+>
+
+  <!-- Hero -->
+  <section class="hero" style="min-height: 35vh;">
+    <div class="container">
+      <div class="hero__content" style="max-width: 100%;">
+        <h1 class="hero__title">Как нас найти</h1>
+        <p class="hero__subtitle">
+          ул. Видная, 46Б, Анапа, посёлок Нижнее Джемете
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-sm" style="padding-top:0;">
+    <div class="container">
+      <div style="display:grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: var(--space-lg);">
+        <img src="/images/about/entrance.jpg" alt="Главный вход гостевого дома Лаванда" class="card__image" />
+        <img src="/images/about/map.jpg" alt="Расположение гостевого дома Лаванда на карте Анапы" class="card__image" />
+        <img src="/images/about/beach-nearby.jpg" alt="Пляж рядом с гостевым домом Лаванда" class="card__image" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section class="section" style="background: var(--color-surface);">
+    <div class="container" style="display:grid; grid-template-columns: 1fr 1fr; gap: var(--space-3xl); align-items:start;">
+      <div>
+        <h2 class="h2" style="margin-bottom: var(--space-lg);">Свяжитесь с нами</h2>
+
+        <div style="margin-bottom: var(--space-xl);">
+          <p class="text-muted text-sm" style="margin-bottom: var(--space-xs);">Телефон</p>
+          <a href="tel:+79892625694" style="font-size: var(--text-h2); font-weight:700; color: var(--color-primary); text-decoration:none;">+7 (989) 262-56-94</a>
+          <p class="text-sm text-muted" style="margin-top: var(--space-xs);">Администратор Светлана</p>
+        </div>
+
+        <div style="margin-bottom: var(--space-xl);">
+          <p class="text-muted text-sm" style="margin-bottom: var(--space-xs);">Адрес</p>
+          <p class="text-lg">Краснодарский край, г-к Анапа,<br />п. Нижнее Джемете, ул. Видная, 46Б</p>
+        </div>
+
+        <div style="margin-bottom: var(--space-xl);">
+          <p class="text-muted text-sm" style="margin-bottom: var(--space-xs);">Режим работы</p>
+          <p class="text-lg">Круглосуточно</p>
+        </div>
+
+        <a href="tel:+79892625694" class="btn btn--cta btn--lg">Позвонить сейчас</a>
+      </div>
+
+      <div>
+        <div style="background: var(--color-primary-light); border-radius: var(--radius-lg); padding: var(--space-xl);">
+          <h3 style="margin-bottom: var(--space-md);">Яндекс Карты</h3>
+          <p style="margin-bottom: var(--space-md);">
+            Смотрите фото, панорамы и отзывы на Яндекс Картах:
+          </p>
+          <a href="https://yandex.ru/maps/org/lavanda/114869614223/" target="_blank" rel="noopener" class="btn btn--primary btn--md">
+            Открыть на Яндекс Картах
+          </a>
+          <div style="margin-top: var(--space-lg); display:flex; gap: var(--space-lg); flex-wrap:wrap;">
+            <span class="badge">★ 5,0 (147 оценок)</span>
+            <span class="badge badge--light">Хорошее место 2026</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Как добраться -->
+  <section class="section">
+    <div class="container">
+      <h2 class="h2" style="text-align:center; margin-bottom: var(--space-2xl);">Как добраться</h2>
+      <div class="features">
+        <div class="feature">
+          <div class="feature__icon">✈️</div>
+          <div class="feature__title">Самолётом</div>
+          <p class="feature__text">Аэропорт Анапа (Витязево) — 7 км.<br />Такси — 10–15 минут.</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">🚂</div>
+          <div class="feature__title">Поездом</div>
+          <p class="feature__text">Ж/д вокзал Анапа — 2 км.<br />Станция Юбилейная — 1 км.</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">🚗</div>
+          <div class="feature__title">На автомобиле</div>
+          <p class="feature__text">Трасса М-4 «Дон» → Анапа →<br />пос. Нижнее Джемете, ул. Видная, 46Б.</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">🚕</div>
+          <div class="feature__title">Трансфер</div>
+          <p class="feature__text">По договорённости.<br />Позвоните — встретим из аэропорта или вокзала.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Что рядом -->
+  <section class="section" style="background: var(--color-surface);">
+    <div class="container">
+      <h2 class="h2" style="text-align:center; margin-bottom: var(--space-2xl);">Что рядом</h2>
+      <div class="features">
+        <div class="feature">
+          <div class="feature__icon">🏖️</div>
+          <div class="feature__title">Песчаный пляж</div>
+          <p class="feature__text">10 минут пешком</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">🛍️</div>
+          <div class="feature__title">Пионерский проспект</div>
+          <p class="feature__text">5 минут пешком</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">🎡</div>
+          <div class="feature__title">Аквапарк, Дельфинарий</div>
+          <p class="feature__text">5 мин на авто / 20 мин пешком</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">🏝️</div>
+          <div class="feature__title">Солнечный остров</div>
+          <p class="feature__text">5 мин на авто</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>

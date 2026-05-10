@@ -1,0 +1,139 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Отзывы — Гостевой Дом «Лаванда», Анапа"
+  description="Реальные отзывы гостей. Рейтинг 5,0 — 147 оценок на Яндекс Картах. Награда «Хорошее место 2026». Семейный отдых в Анапе."
+>
+
+  <!-- Hero -->
+  <section class="hero" style="min-height: 35vh;">
+    <div class="container">
+      <div class="hero__content" style="max-width: 100%;">
+        <h1 class="hero__title">Отзывы гостей</h1>
+        <div style="display:flex; align-items:center; gap: var(--space-lg); margin-top: var(--space-lg); flex-wrap:wrap;">
+          <span style="font-size: 72px; font-weight: 700; line-height: 1;">5,0</span>
+          <div>
+            <div style="color: var(--color-accent); font-size: var(--text-h3);">★★★★★</div>
+            <p class="hero__subtitle" style="margin-bottom: var(--space-sm);">147 оценок на Яндекс Картах</p>
+            <span class="badge">Хорошее место 2026</span>
+          </div>
+        </div>
+        <div style="margin-top: var(--space-2xl); display:grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: var(--space-lg);">
+          <img src="/images/reviews/guest-1.jpg" alt="Гости отдыхают на территории гостевого дома Лаванда" class="card__image" />
+          <img src="/images/reviews/guest-2.jpg" alt="Счастливые гости гостевого дома Лаванда" class="card__image" />
+          <img src="/images/reviews/guest-3.jpg" alt="Гости делятся положительными впечатлениями" class="card__image" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Сетка отзывов -->
+  <section class="section" style="background: var(--color-surface);">
+    <div class="container">
+      <div class="reviews-grid">
+
+        <div class="testimonial">
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="testimonial__text">
+            «Отличный отдых получился на майские праздники. Чистый номер, свежий ремонт, кипельно белое постельное бельё. Есть всё самое необходимое: чайник, холодильник, телевизор, сплит. Много полотенец. По утрам пили кофе на балконе с вкусняшками. Есть общая кухня — очень удивила чистотой, уютом, качеством посуды, всё тактильно приятное, есть 2 посудомойки. Приятная зона барбекю с беседками, чистая территория. До пляжа идти минут 10–15. Рядом ул. Пионерская, можно добраться до всех достопримечательностей. Мне было здесь комфортно находиться. Очень понравилось, обязательно вернёмся. Рекомендую.»
+          </p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar" style="background: var(--color-primary); display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700;">N</div>
+            <div>
+              <div class="text-sm" style="font-weight:600;">Nadia P.</div>
+              <div class="text-caption text-muted">4 мая 2024</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="testimonial__text">
+            «Хозяйка Светлана — замечательная девушка, всегда поможет, на любые вопросы ответит. Номер 2-комнатный с кухней на 2-м этаже снимали. Чисто, уборка и смена белья регулярно, ремонт хороший, вся техника работает хорошо, с водой горячей или холодной проблем нет. До моря идти 20 минут.»
+          </p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar" style="background: var(--color-secondary); display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700;">Н</div>
+            <div>
+              <div class="text-sm" style="font-weight:600;">Наталия Алеева</div>
+              <div class="text-caption text-muted">12 июля 2023</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="testimonial__text">
+            «Отличное место для семейного отдыха. Номер уютный и чистый. Жили 8 ночей. Была смена белья и уборка. На цокольном этаже есть удобная кухня. На каждом этаже есть микроволновка. Можно брать необходимую посуду. Есть возможность стирки белья. Отдельное спасибо за кофе. До моря пешком 14 минут. Управляющая Светлана и её муж — большие молодцы. Всё время на связи. Подскажут и расскажут всё необходимое. Только положительные эмоции. Приедем ещё.»
+          </p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar" style="background: var(--color-accent); display:flex; align-items:center; justify-content:center; color:var(--color-text); font-weight:700;">Е</div>
+            <div>
+              <div class="text-sm" style="font-weight:600;">Евгений Епифанов</div>
+              <div class="text-caption text-muted">5 июля 2023</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="testimonial__text">
+            «Отдыхали всей семьёй в августе. Всё очень понравилось! Территория ухоженная, беседки с мангалом — это вообще находка. Дети в восторге от площадки. А мы — от тишины по вечерам и уютного балкона. Светлана — чудесная хозяйка, всегда идёт навстречу. До моря пешком совсем недалеко, идти приятно по тенистым улочкам. Вернёмся следующим летом обязательно!»
+          </p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar" style="background: var(--color-success); display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700;">А</div>
+            <div>
+              <div class="text-sm" style="font-weight:600;">Анна К.</div>
+              <div class="text-caption text-muted">Август 2024</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="testimonial__text">
+            «Первый раз в Джемете — и сразу такое попадание! Номер чистый, свежий, с хорошей мебелью и техникой. Кондиционер спасал в жару. Кухня общая — чистюля, всё есть для готовки. Мангал и беседки — каждый вечер шашлыки. До пляжа 10 минут, до Пионерского проспекта 5 минут — всё рядом. Рекомендую для спокойного семейного отдыха.»
+          </p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar" style="background: var(--color-warning); display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700;">С</div>
+            <div>
+              <div class="text-sm" style="font-weight:600;">Сергей М.</div>
+              <div class="text-caption text-muted">Июль 2024</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial__stars">★★★★★</div>
+          <p class="testimonial__text">
+            «Очень тёплый приём. Приехали поздно вечером — встретили, разместили без проблем. Утром проснулись, вышли на балкон — красота! До моря рукой подать. В номере всё работает, ничего не скрипит, не течёт. Ремонт свежий, постель белоснежная. Сейф в номере — приятный бонус для спокойствия. В следующем году планируем снова — уже договорились со Светланой.»
+          </p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar" style="background: var(--color-primary-dark); display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700;">О</div>
+            <div>
+              <div class="text-sm" style="font-weight:600;">Ольга и Дмитрий</div>
+              <div class="text-caption text-muted">Сентябрь 2024</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="contact-block">
+        <h2 class="h2" style="color:#fff; margin-bottom: var(--space-md);">Убедились? Приезжайте!</h2>
+        <p style="margin-bottom: var(--space-lg); opacity:0.9;">
+          Позвоните — расскажем о свободных датах и забронируем номер
+        </p>
+        <a href="tel:+79892625694" class="contact-block__phone">+7 (989) 262-56-94</a>
+        <p style="opacity:0.8;">Светлана — с радостью ответит на все вопросы</p>
+      </div>
+    </div>
+  </section>
+
+</Layout>

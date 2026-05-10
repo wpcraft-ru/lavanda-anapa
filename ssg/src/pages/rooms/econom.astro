@@ -1,0 +1,90 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const room = {
+  title: 'Эконом',
+  price: '800',
+  who: 'Соло-путешественники, командировочные',
+  desc: 'Уютный и функциональный номер для тех, кто ценит комфорт без лишних затрат. Всё самое необходимое — на своих местах.',
+  amenities: [
+    { icon: '🛏️', text: 'Кровать с ортопедическим матрасом' },
+    { icon: '❄️', text: 'Кондиционер (сплит-система)' },
+    { icon: '📺', text: 'Телевизор' },
+    { icon: '🧊', text: 'Холодильник' },
+    { icon: '🔒', text: 'Сейф' },
+    { icon: '🗄️', text: 'Шкаф и стол' },
+  ],
+};
+---
+
+<Layout
+  title="Номер Эконом — от 800 ₽/ночь | Гостевой Дом «Лаванда», Анапа"
+  description="Уютный эконом-номер со всем необходимым: кондиционер, ТВ, холодильник, сейф. От 800 ₽/ночь в посёлке Джемете, Анапа."
+>
+
+  <!-- Заголовок -->
+  <section class="section" style="padding-bottom: 0;">
+    <div class="container">
+      <p class="text-sm text-muted" style="margin-bottom: var(--space-sm);">
+        <a href="/rooms/">← Все номера</a>
+      </p>
+      <h1 class="h1">{room.title}</h1>
+      <div style="display:flex; align-items:baseline; gap: var(--space-md); margin-top: var(--space-md); flex-wrap:wrap;">
+        <span style="font-size: var(--text-h2); font-weight:700; color: var(--color-primary);">от {room.price} ₽<small style="font-size:var(--text-body-md); font-weight:400; color:var(--color-text-muted);">/ночь</small></span>
+        <span class="badge badge--light">Для {room.who}</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Галерея номера -->
+  <section class="section-sm">
+    <div class="container">
+      <div style="display:grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: var(--space-lg);">
+        <img src="/images/rooms/econom-1.jpg" alt="Интерьер эконом номера в гостевом доме Лаванда" class="card__image" />
+        <img src="/images/rooms/econom-2.jpg" alt="Кровать эконом номера в гостевом доме Лаванда" class="card__image" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Описание + Удобства -->
+  <section class="section-sm" style="padding-top:0;">
+    <div class="container" style="display:grid; grid-template-columns: 1fr 1fr; gap: var(--space-3xl); align-items:start;">
+      <div>
+        <h2 class="h2" style="margin-bottom: var(--space-lg);">О номере</h2>
+        <p style="margin-bottom: var(--space-md);">{room.desc}</p>
+        <p style="margin-bottom: var(--space-md);">
+          В эконом-номере вас ждёт всё необходимое для комфортного проживания: удобная кровать с ортопедическим матрасом, кондиционер для прохлады в жаркие дни, телевизор для вечернего отдыха, холодильник для продуктов и сейф для ценностей.
+        </p>
+        <p>
+          На этаже — микроволновая печь, чайник, гладильная доска и утюг. Идеальный вариант для тех, кто приехал на море за впечатлениями, а в номере только ночует.
+        </p>
+      </div>
+      <div>
+        <h2 class="h2" style="margin-bottom: var(--space-lg);">Удобства в номере</h2>
+        <div class="amenities" style="flex-direction:column;">
+          {room.amenities.map((a) => (
+            <div class="amenity">
+              <span style="font-size:24px;">{a.icon}</span>
+              <span>{a.text}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="contact-block">
+        <h2 class="h2" style="color:#fff; margin-bottom: var(--space-md);">Заинтересовал этот номер?</h2>
+        <p style="margin-bottom: var(--space-lg); opacity:0.9;">
+          Позвоните — уточним наличие и забронируем для вас
+        </p>
+        <a href="tel:+79892625694" class="contact-block__phone">+7 (989) 262-56-94</a>
+        <p style="opacity:0.8;">Администратор Светлана</p>
+      </div>
+    </div>
+  </section>
+
+</Layout>

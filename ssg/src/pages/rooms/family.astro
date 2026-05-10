@@ -1,0 +1,88 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const room = {
+  title: 'Семейный 2-комнатный',
+  price: '2 500',
+  who: 'Семьи с детьми, компании',
+  desc: 'Две комнаты с собственной кухней — идеальное пространство для семьи. Дети отдыхают в своей комнате, родители — в своей.',
+  amenities: [
+    { icon: '🛏️🛏️', text: 'Две раздельные комнаты' },
+    { icon: '🍳', text: 'Собственная кухня (плита, мойка, посуда)' },
+    { icon: '❄️', text: 'Кондиционер (сплит-система)' },
+    { icon: '📺', text: 'Телевизор (2 шт.)' },
+    { icon: '🧊', text: 'Холодильник' },
+    { icon: '🔒', text: 'Сейф' },
+    { icon: '🗄️', text: 'Шкафы и стол' },
+    { icon: '🌅', text: 'Балкон со столиком и стульями' },
+  ],
+};
+---
+
+<Layout
+  title="Семейный 2-комнатный номер — от 2 500 ₽/ночь | Гостевой Дом «Лаванда», Анапа"
+  description="Двухкомнатный номер с собственной кухней и балконом — от 2 500 ₽/ночь. Идеально для семейного отдыха в Анапе."
+>
+
+  <section class="section" style="padding-bottom: 0;">
+    <div class="container">
+      <p class="text-sm text-muted" style="margin-bottom: var(--space-sm);">
+        <a href="/rooms/">← Все номера</a>
+      </p>
+      <h1 class="h1">{room.title}</h1>
+      <div style="display:flex; align-items:baseline; gap: var(--space-md); margin-top: var(--space-md); flex-wrap:wrap;">
+        <span style="font-size: var(--text-h2); font-weight:700; color: var(--color-primary);">от {room.price} ₽<small style="font-size:var(--text-body-md); font-weight:400; color:var(--color-text-muted);">/ночь</small></span>
+        <span class="badge badge--light">Для {room.who}</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-sm">
+    <div class="container">
+      <div style="display:grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: var(--space-lg);">
+        <img src="/images/rooms/family-1.jpg" alt="Семейный номер в гостевом доме Лаванда" class="card__image" />
+        <img src="/images/rooms/family-kitchen.jpg" alt="Кухонная зона семейного номера" class="card__image" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section-sm" style="padding-top:0;">
+    <div class="container" style="display:grid; grid-template-columns: 1fr 1fr; gap: var(--space-3xl); align-items:start;">
+      <div>
+        <h2 class="h2" style="margin-bottom: var(--space-lg);">О номере</h2>
+        <p style="margin-bottom: var(--space-md);">{room.desc}</p>
+        <p style="margin-bottom: var(--space-md);">
+          Самый просторный вариант в гостевом доме. Две отдельные комнаты — вы не мешаете друг другу. В вашем распоряжении собственная кухня с плитой, мойкой и всей необходимой посудой. Готовьте как дома — для детей это особенно важно.
+        </p>
+        <p>
+          Балкон со столиком и стульями — для утреннего кофе или вечернего чая с видом на посёлок. Два телевизора, чтобы дети смотрели мультики, а взрослые — новости. Регулярная уборка, смена белья и полотенец. Всё для того, чтобы вы отдыхали, а не думали о быте.
+        </p>
+      </div>
+      <div>
+        <h2 class="h2" style="margin-bottom: var(--space-lg);">Удобства в номере</h2>
+        <div class="amenities" style="flex-direction:column;">
+          {room.amenities.map((a) => (
+            <div class="amenity">
+              <span style="font-size:24px;">{a.icon}</span>
+              <span>{a.text}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-sm">
+    <div class="container">
+      <div class="contact-block">
+        <h2 class="h2" style="color:#fff; margin-bottom: var(--space-md);">Планируете семейный отпуск?</h2>
+        <p style="margin-bottom: var(--space-lg); opacity:0.9;">
+          Позвоните — расскажем о свободных датах и поможем с бронью
+        </p>
+        <a href="tel:+79892625694" class="contact-block__phone">+7 (989) 262-56-94</a>
+        <p style="opacity:0.8;">Администратор Светлана</p>
+      </div>
+    </div>
+  </section>
+
+</Layout>

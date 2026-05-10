@@ -1,0 +1,183 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout
+  title="Номера и цены — Гостевой Дом «Лаванда», Анапа"
+  description="Комфортабельные номера от 800 до 4000 ₽/ночь. Эконом, Стандарт, Семейный 2-комнатный. Современные удобства, закрытая территория, 10 минут до пляжа."
+>
+
+  <!-- Hero -->
+  <section class="hero" style="min-height: 40vh;">
+    <div class="container">
+      <div class="hero__content" style="max-width: 100%;">
+        <h1 class="hero__title">Номера и цены</h1>
+        <p class="hero__subtitle">
+          Комфортное размещение для любого бюджета — от 800 до 4&nbsp;000&nbsp;₽/ночь
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Сетка номеров -->
+  <section class="section" style="background: var(--color-surface);">
+    <div class="container">
+      <div class="room-grid">
+
+        <!-- Эконом -->
+        <div class="card room-card">
+          <img src="/images/rooms/econom-1.jpg" alt="Эконом номер в гостевом доме Лаванда" class="card__image" />
+          <div class="card__body">
+            <h3 class="room-card__title">Эконом</h3>
+            <p class="text-sm text-muted" style="margin-bottom: var(--space-md);">
+              Уютный номер со всем необходимым для непритязательных путешественников.
+            </p>
+            <div class="room-card__amenities">
+              <span>🛏️ Ортопедический матрас</span>
+              <span>❄️ Кондиционер</span>
+              <span>📺 ТВ</span>
+              <span>🔒 Сейф</span>
+              <span>🧊 Холодильник</span>
+            </div>
+            <div class="room-card__footer">
+              <div class="room-card__price">от 800 <small>₽/ночь</small></div>
+              <a href="/rooms/econom/" class="btn btn--secondary btn--sm">Подробнее</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Стандарт -->
+        <div class="card room-card">
+          <img src="/images/rooms/standard-1.jpg" alt="Номер Стандарт в гостевом доме Лаванда" class="card__image" />
+          <div class="card__body">
+            <h3 class="room-card__title">Стандарт</h3>
+            <p class="text-sm text-muted" style="margin-bottom: var(--space-md);">
+              Просторный номер с балконом — идеально для пар и спокойного отдыха.
+            </p>
+            <div class="room-card__amenities">
+              <span>🛏️ Ортопедический матрас</span>
+              <span>❄️ Кондиционер</span>
+              <span>📺 ТВ</span>
+              <span>🧊 Холодильник</span>
+              <span>🔒 Сейф</span>
+              <span>🌅 Балкон со столиком</span>
+            </div>
+            <div class="room-card__footer">
+              <div class="room-card__price">от 1&nbsp;500 <small>₽/ночь</small></div>
+              <a href="/rooms/standard/" class="btn btn--secondary btn--sm">Подробнее</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Семейный -->
+        <div class="card room-card">
+          <img src="/images/rooms/family-1.jpg" alt="Семейный номер в гостевом доме Лаванда" class="card__image" />
+          <div class="card__body">
+            <h3 class="room-card__title">Семейный 2-комнатный</h3>
+            <p class="text-sm text-muted" style="margin-bottom: var(--space-md);">
+              Две комнаты с собственной кухней — максимум комфорта для семьи с детьми.
+            </p>
+            <div class="room-card__amenities">
+              <span>🛏️🛏️ 2 комнаты</span>
+              <span>🍳 Собственная кухня</span>
+              <span>❄️ Кондиционер</span>
+              <span>📺 ТВ (2 шт)</span>
+              <span>🧊 Холодильник</span>
+              <span>🔒 Сейф</span>
+              <span>🌅 Балкон</span>
+            </div>
+            <div class="room-card__footer">
+              <div class="room-card__price">от 2&nbsp;500 <small>₽/ночь</small></div>
+              <a href="/rooms/family/" class="btn btn--secondary btn--sm">Подробнее</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Таблица сравнения -->
+  <section class="section">
+    <div class="container">
+      <h2 class="h2" style="text-align:center; margin-bottom: var(--space-2xl);">Сравнение номеров</h2>
+      <div style="overflow-x:auto;">
+        <table style="width:100%; border-collapse:collapse; text-align:center;">
+          <thead>
+            <tr style="border-bottom: 2px solid var(--color-border);">
+              <th style="text-align:left; padding: var(--space-md);">Удобство</th>
+              <th style="padding: var(--space-md);">Эконом</th>
+              <th style="padding: var(--space-md);">Стандарт</th>
+              <th style="padding: var(--space-md);">Семейный</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid var(--color-border);">
+              <td style="text-align:left; padding: var(--space-md);">Комнат</td>
+              <td style="padding: var(--space-md);">1</td>
+              <td style="padding: var(--space-md);">1</td>
+              <td style="padding: var(--space-md);">2</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--color-border);">
+              <td style="text-align:left; padding: var(--space-md);">Кондиционер</td>
+              <td style="padding: var(--space-md); color: var(--color-success);">✓</td>
+              <td style="padding: var(--space-md); color: var(--color-success);">✓</td>
+              <td style="padding: var(--space-md); color: var(--color-success);">✓</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--color-border);">
+              <td style="text-align:left; padding: var(--space-md);">ТВ</td>
+              <td style="padding: var(--space-md); color: var(--color-success);">✓</td>
+              <td style="padding: var(--space-md); color: var(--color-success);">✓</td>
+              <td style="padding: var(--space-md); color: var(--color-success);">✓ (2 шт)</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--color-border);">
+              <td style="text-align:left; padding: var(--space-md);">Холодильник</td>
+              <td style="padding: var(--space-md); color: var(--color-success);">✓</td>
+              <td style="padding: var(--space-md); color: var(--color-success);">✓</td>
+              <td style="padding: var(--space-md); color: var(--color-success);">✓</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--color-border);">
+              <td style="text-align:left; padding: var(--space-md);">Сейф</td>
+              <td style="padding: var(--space-md); color: var(--color-success);">✓</td>
+              <td style="padding: var(--space-md); color: var(--color-success);">✓</td>
+              <td style="padding: var(--space-md); color: var(--color-success);">✓</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--color-border);">
+              <td style="text-align:left; padding: var(--space-md);">Балкон</td>
+              <td style="padding: var(--space-md); color: var(--color-text-muted);">—</td>
+              <td style="padding: var(--space-md); color: var(--color-success);">✓</td>
+              <td style="padding: var(--space-md); color: var(--color-success);">✓</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--color-border);">
+              <td style="text-align:left; padding: var(--space-md);">Собственная кухня</td>
+              <td style="padding: var(--space-md); color: var(--color-text-muted);">—</td>
+              <td style="padding: var(--space-md); color: var(--color-text-muted);">—</td>
+              <td style="padding: var(--space-md); color: var(--color-success);">✓</td>
+            </tr>
+            <tr>
+              <td style="text-align:left; padding: var(--space-md); font-weight:600;">Цена</td>
+              <td style="padding: var(--space-md); font-weight:700; color: var(--color-primary);">от 800 ₽</td>
+              <td style="padding: var(--space-md); font-weight:700; color: var(--color-primary);">от 1 500 ₽</td>
+              <td style="padding: var(--space-md); font-weight:700; color: var(--color-primary);">от 2 500 ₽</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="contact-block">
+        <h2 class="h2" style="color:#fff; margin-bottom: var(--space-md);">Не знаете, какой номер выбрать?</h2>
+        <p style="margin-bottom: var(--space-lg); opacity:0.9;">
+          Позвоните — поможем подобрать вариант под ваш бюджет и пожелания
+        </p>
+        <a href="tel:+79892625694" class="contact-block__phone">+7 (989) 262-56-94</a>
+        <p style="opacity:0.8;">Администратор Светлана</p>
+      </div>
+    </div>
+  </section>
+
+</Layout>

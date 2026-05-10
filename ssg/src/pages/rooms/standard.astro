@@ -1,0 +1,87 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const room = {
+  title: 'Стандарт',
+  price: '1 500',
+  who: 'Пары, друзья, спокойный отдых',
+  desc: 'Просторный номер с балконом — ваш личный уголок уюта на побережье. Идеально для пар и тех, кто ценит личное пространство.',
+  amenities: [
+    { icon: '🛏️', text: 'Кровать с ортопедическим матрасом' },
+    { icon: '❄️', text: 'Кондиционер (сплит-система)' },
+    { icon: '📺', text: 'Телевизор' },
+    { icon: '🧊', text: 'Холодильник' },
+    { icon: '🔒', text: 'Сейф' },
+    { icon: '🗄️', text: 'Шкаф и стол' },
+    { icon: '🌅', text: 'Балкон со столиком и стульями' },
+  ],
+};
+---
+
+<Layout
+  title="Номер Стандарт — от 1 500 ₽/ночь | Гостевой Дом «Лаванда», Анапа"
+  description="Просторный стандартный номер с балконом: кондиционер, ТВ, холодильник, сейф. От 1 500 ₽/ночь. Идеально для пар."
+>
+
+  <section class="section" style="padding-bottom: 0;">
+    <div class="container">
+      <p class="text-sm text-muted" style="margin-bottom: var(--space-sm);">
+        <a href="/rooms/">← Все номера</a>
+      </p>
+      <h1 class="h1">{room.title}</h1>
+      <div style="display:flex; align-items:baseline; gap: var(--space-md); margin-top: var(--space-md); flex-wrap:wrap;">
+        <span style="font-size: var(--text-h2); font-weight:700; color: var(--color-primary);">от {room.price} ₽<small style="font-size:var(--text-body-md); font-weight:400; color:var(--color-text-muted);">/ночь</small></span>
+        <span class="badge badge--light">Для {room.who}</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-sm">
+    <div class="container">
+      <div style="display:grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: var(--space-lg);">
+        <img src="/images/rooms/standard-1.jpg" alt="Интерьер номера Стандарт в гостевом доме Лаванда" class="card__image" />
+        <img src="/images/rooms/standard-balcony.jpg" alt="Балкон номера Стандарт в гостевом доме Лаванда" class="card__image" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section-sm" style="padding-top:0;">
+    <div class="container" style="display:grid; grid-template-columns: 1fr 1fr; gap: var(--space-3xl); align-items:start;">
+      <div>
+        <h2 class="h2" style="margin-bottom: var(--space-lg);">О номере</h2>
+        <p style="margin-bottom: var(--space-md);">{room.desc}</p>
+        <p style="margin-bottom: var(--space-md);">
+          Утро начинается с кофе на балконе — столик и стулья уже ждут. Внутри — свежий ремонт, удобная кровать с ортопедическим матрасом, кондиционер для прохлады и всё, что нужно для комфортного отдыха.
+        </p>
+        <p>
+          На этаже — микроволновая печь, чайник, гладильная доска и утюг. На цокольном этаже — просторная общая кухня с посудомойками. Бельё кипельно-белое, уборка регулярная. Идеально для отпуска без забот.
+        </p>
+      </div>
+      <div>
+        <h2 class="h2" style="margin-bottom: var(--space-lg);">Удобства в номере</h2>
+        <div class="amenities" style="flex-direction:column;">
+          {room.amenities.map((a) => (
+            <div class="amenity">
+              <span style="font-size:24px;">{a.icon}</span>
+              <span>{a.text}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-sm">
+    <div class="container">
+      <div class="contact-block">
+        <h2 class="h2" style="color:#fff; margin-bottom: var(--space-md);">Заинтересовал этот номер?</h2>
+        <p style="margin-bottom: var(--space-lg); opacity:0.9;">
+          Позвоните — уточним наличие и забронируем для вас
+        </p>
+        <a href="tel:+79892625694" class="contact-block__phone">+7 (989) 262-56-94</a>
+        <p style="opacity:0.8;">Администратор Светлана</p>
+      </div>
+    </div>
+  </section>
+
+</Layout>

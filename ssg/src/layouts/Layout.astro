@@ -1,0 +1,89 @@
+---
+import '../assets/app.css';
+
+export interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Гостевой Дом «Лаванда» — Анапа, Джемете',
+  description = 'Семейный гостевой дом в посёлке Нижнее Джемете, Анапа. Современные номера, закрытая территория, детская площадка, 10 минут до песчаного пляжа.',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <a href="/" class="header__logo">🌿 Лаванда</a>
+        <nav class="nav" aria-label="Основное меню">
+          <a href="/rooms/" class="nav__link">Номера</a>
+          <a href="/reviews/" class="nav__link">Отзывы</a>
+          <a href="/contacts/" class="nav__link">Контакты</a>
+          <a href="tel:+79892625694" class="btn btn--primary btn--sm">+7 (989) 262-56-94</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div>
+            <h4 style="color:#fff; margin-bottom: var(--space-md);">Гостевой Дом «Лаванда»</h4>
+            <p style="opacity:0.8; font-size: var(--text-body-sm);">
+              Семейный отдых в посёлке Нижнее Джемете, Анапа.<br />
+              Закрытая территория, современные номера, душевный приём.
+            </p>
+          </div>
+          <div>
+            <h4 style="color:#fff; margin-bottom: var(--space-md);">Навигация</h4>
+            <nav style="display:flex; flex-direction:column; gap: var(--space-sm);">
+              <a href="/">Главная</a>
+              <a href="/rooms/">Номера</a>
+              <a href="/reviews/">Отзывы</a>
+              <a href="/contacts/">Контакты</a>
+            </nav>
+          </div>
+          <div>
+            <h4 style="color:#fff; margin-bottom: var(--space-md);">Контакты</h4>
+            <p style="font-size: var(--text-body-sm); opacity:0.8;">
+              ул. Видная, 46Б, Анапа, п. Джемете<br />
+              <a href="tel:+79892625694" style="font-size: var(--text-body-lg); font-weight:600; display:block; margin-top: var(--space-sm);">
+                +7 (989) 262-56-94
+              </a>
+              Круглосуточно
+            </p>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          &copy; {new Date().getFullYear()} Гостевой Дом «Лаванда». Анапа, Джемете. Все права защищены.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
